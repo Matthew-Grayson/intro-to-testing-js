@@ -13,3 +13,16 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+describe("foo", function() {
+    let expectedResult = 2;
+    it('should return true if foo() = 2', function () {
+        expect(foo()).toBe(2);
+    });
+});
+
+describe('sayHello', function() {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+});
