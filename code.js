@@ -8,5 +8,10 @@ function foo() {
 }
 
 function sayHello(input) {
-    return `Hello, ${input}!`
+    if(isNaN(Number(input)) && input !== undefined) {
+        return `Hello, ${input}!`
+    }
+    else {
+        return "Hello, World!"
+    }
 }
