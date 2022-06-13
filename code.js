@@ -7,6 +7,6 @@ function foo() {
     return 2;
 }
 
-const sayHello = function() {
-    return ""
+function sayHello(input) {
+    return `Hello, ${input}!`
 }
