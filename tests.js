@@ -53,3 +53,17 @@ describe('sayHello', function() {
         expect(sayHello(22)).toBe("Hello, World!")
     })
 });
+describe('isFive', function () {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe("function")
+    })
+    it('should return true when passed passed 5', function () {
+        expect(isFive(5)).toBe(true)
+    });
+    it('should return true when passed numerical string 5', function () {
+        expect(isFive("5")).toBe(true)
+    });
+    it('should return false when passed 4', function () {
+        expect(isFive(4)).toBe(false)
+    });
+})

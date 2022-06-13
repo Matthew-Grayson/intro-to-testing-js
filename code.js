@@ -15,3 +15,7 @@ function sayHello(input) {
         return "Hello, World!"
     }
 }
+
+function isFive(input) {
+    return (parseInt(input) === 5)
+}
